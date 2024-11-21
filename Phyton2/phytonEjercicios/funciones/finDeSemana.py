@@ -1,5 +1,5 @@
 def finde(lista):
-    if "Sábado" in lista or "Domingo" in lista:
+    if "Sábado" in lista or "Domingo" in lista or "sabado" in lista or "domingo" in lista or "sábado" in lista:
         return True
     else:
         return False
