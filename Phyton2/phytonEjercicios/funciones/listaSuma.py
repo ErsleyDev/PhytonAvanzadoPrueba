@@ -11,7 +11,7 @@ def suma(a,b):
     for i in range(4):
         x = a[i]+b[i]
         lista.append(x)
-        return lista
+    return lista
     
 l1 = crear()
 l2 = crear()
