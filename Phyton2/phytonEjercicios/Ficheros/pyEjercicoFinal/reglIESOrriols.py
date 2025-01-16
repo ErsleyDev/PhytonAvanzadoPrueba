@@ -18,7 +18,7 @@ def entradaDatos(nia, nom, val, cas, ing, filo, hist):
         print("Introduce las notas de Valenciano, Castellano, Inglés, Filosofía e Historia")
         lnomasig=["Valenciano", "Castellano", "Inglés", "Filosofía", "Historia"]
         for i in range(5):
-             
+        
         val = int(input("Nota de Valenciano: "))
         cas = int(input("Nota de Castellano: "))
         ing = int(input("Nota de Inglés: "))
