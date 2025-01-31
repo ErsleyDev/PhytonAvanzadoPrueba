@@ -29,13 +29,14 @@ def mostrarDatos():
         for line in fichero:
             print(line)
 
-def devolverLineaDatosAl():
-    nia = int(input("Introduce el NIA que deseas buscar"))
+def devolverLineaDatosAl(nia):
+    nia = input("Introduce el NIA que deseas buscar")
     with open(ruta, mode="r", encoding="utf-8") as fichero:
         for line in fichero:
+            if nia in line:
+                return line
             
-
-
+nia = ""
 opc = 0
 while opc != 5:
     menu()
@@ -47,7 +48,10 @@ while opc != 5:
         print("DATOS DEL ALUMNADO")
         mostrarDatos()
     elif opc == 3:
-        devolverLineaDatosAl()
+        line = devolverLineaDatosAl(nia)
+        print(line)
+        
+        
         
         
 print("Hasta luego")
